@@ -330,28 +330,82 @@
 
 
 
-class Student
-    attr_accessor :name, :major, :gpa
-    def initialize(name, major, gpa)
-        @name = name 
-        @major = major
-        @gpa = gpa
+# class Student
+#     attr_accessor :name, :major, :gpa
+#     def initialize(name, major, gpa)
+#         @name = name 
+#         @major = major
+#         @gpa = gpa
+#     end
+#     def has_honors
+#         if @gpa >= 3.5
+#             return true
+#         end
+#         return false
+#     end
+# end
+
+# student1 = Student.new('Jim', 'Business', 2.6)
+# student2 = Student.new('Pam', 'Art', 3.6)
+
+
+# puts student2.has_honors
+
+
+
+# class Question 
+#     attr_accessor :prompt, :answer
+#     def initialize(prompt, answer)
+#         @prompt = prompt
+#         @answer = answer
+#     end 
+# end
+
+# p1 = 'what is the sky color?\n(a)red\n(b)blue'
+# p2 = 'what color are bananas\n(a)blue\n(b)yellow'
+
+# questions = [
+#     Question.new(p1, 'b'),
+#     Question.new(p2, 'b')
+# ]
+
+# def run_test(questions)
+#     answer = ''
+#     score = 0
+#     for question in questions
+#         puts question.prompt
+#         answer = gets.chomp()
+#         if answer == question.answer
+#             score += 1
+#         end
+#     end
+#     puts('you got ' + score.to_s + '/' + questions.length().to_s)
+# end
+
+# run_test(questions)
+
+
+
+
+### INHERITANCE
+
+
+
+
+class Chef
+    def make_chicken
+        puts "The chef makes chicken"
     end
-    def has_honors
-        if @gpa >= 3.5
-            return true
-        end
-        return false
+    def make_salad
+        puts 'The chef makes salad'
+    end 
+    def make_special_dish
+        puts 'The chef makes bbq ribs'
     end
 end
 
-student1 = Student.new('Jim', 'Business', 2.6)
-student2 = Student.new('Pam', 'Art', 3.6)
-
-
-puts student2.has_honors
-
-
+chef = Chef.new()
+chef.make_chicken
 
 
 # ruby giraffe.rb
