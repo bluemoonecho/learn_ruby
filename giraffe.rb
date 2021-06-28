@@ -361,8 +361,8 @@
 #     end 
 # end
 
-# p1 = 'what is the sky color?\n(a)red\n(b)blue'
-# p2 = 'what color are bananas\n(a)blue\n(b)yellow'
+# p1 = "what is the sky color?\n(a)red\n(b)blue"
+# p2 = "what color are bananas\n(a)blue\n(b)yellow"
 
 # questions = [
 #     Question.new(p1, 'b'),
@@ -387,25 +387,81 @@
 
 
 
+
 ### INHERITANCE
 
 
 
 
-class Chef
-    def make_chicken
-        puts "The chef makes chicken"
-    end
-    def make_salad
-        puts 'The chef makes salad'
-    end 
-    def make_special_dish
-        puts 'The chef makes bbq ribs'
-    end
-end
+# class Chef
+#     def make_chicken
+#         puts "The chef makes chicken"
+#     end
+#     def make_salad
+#         puts 'The chef makes salad'
+#     end 
+#     def make_special_dish
+#         puts 'The chef makes bbq ribs'
+#     end
+# end
 
-chef = Chef.new()
-chef.make_chicken
+# class ItalianChef < Chef
+#     def make_special_dish
+#         puts 'The chef makes egg plant'
+#     end
+#     def make_pasta
+#         puts 'The chef makes pasta'
+#     end
+# end
+
+# chef = Chef.new()
+
+# italian_chef = ItalianChef.new
+
+# italian_chef.make_special_dish
+
+
+
+
+
+### MODULES
+## a container for methods
+
+
+
+
+
+# module Tools
+#     def sayhi(name)
+#         puts "hello #{name}"
+#     end 
+#     def saybye(name)
+#         puts "bye #{name}"
+#     end
+# end 
+
+
+# include Tools
+# Tools.sayhi('mike')
+
+
+
+
+
+####IMPORT MODULE FROM OTHER FILES
+
+
+
+# require_relative 'useful_tools.rb'
+# include Tools 
+
+# Tools.sayhi('jake')
+
+
+
+#### INTERACTIVE RUBY ##
+
+###irb
 
 
 # ruby giraffe.rb
