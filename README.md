@@ -1,0 +1,1 @@
+This is a cheat file of the basics of ruby
